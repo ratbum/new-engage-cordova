@@ -1,0 +1,48 @@
+{
+  "name": "engage",
+  "displayName": "HelloCordova",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-ios": "^6.1.0",
+    "@crowdlab/engage": "3.33.0",
+    "cordova-plugin-background-mode": "git+https://github.com/sercatven/cordova-plugin-background-mode.git",
+    "cordova-plugin-badge": "^0.8.8",
+    "cordova-plugin-cocoapod-support": "1.6.2",
+    "cordova-plugin-device": "2.0.2",
+    "cordova-plugin-file": "^5.0.0",
+    "cordova-plugin-ios-camera-permissions": "1.2.0",
+    "cordova-plugin-media-capture": "^2.0.0",
+    "cordova-plugin-network-information": "^2.0.1",
+    "cordova-plugin-whitelist": "^1.3.4",
+    "cordova-plugin-wkwebview-engine": "^1.2.1",
+    "cordova.plugins.diagnostic": "^5.0.1",
+    "intersection-observer": "^0.7.0",
+    "localforage": "^1.7.3",
+    "phonegap-plugin-push": "2.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.0.1",
+    "sentry-cordova": "^0.17.0"
+  },
+  "devDependencies": {
+   
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "ios"
+    ]
+  }
+}
