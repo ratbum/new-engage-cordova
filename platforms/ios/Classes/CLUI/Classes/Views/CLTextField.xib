@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLTextField" customModule="Crowdlab" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonToggleTextVisibility" destination="M9a-US-RH5" id="VwA-Og-B8e"/>
+                <outlet property="placeholderLabel" destination="i5E-XX-did" id="fae-rz-EYJ"/>
+                <outlet property="textField" destination="O0h-Aq-XWL" id="wQn-Ed-vZK"/>
+                <outlet property="toolTipView" destination="5PH-Ug-6Ki" id="Cnd-e0-t4j"/>
+                <outlet property="tooltipLabel" destination="Uaf-rd-wvV" id="B3K-cQ-koS"/>
+                <outlet property="topLabel" destination="fMN-Ch-t7e" id="q69-ai-CeV"/>
+                <outlet property="underline" destination="2o0-C0-Us7" id="thg-nk-y5I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="TopLeft" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placeholder Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMN-Ch-t7e" userLabel="Placeholder Label">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="14.5"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="14.5" id="Dks-46-zul"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dje-Bj-X8u">
+                    <rect key="frame" x="0.0" y="14.5" width="375" height="56.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ks-0I-d60" userLabel="Field View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O0h-Aq-XWL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="cluiTextFieldField"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                </textField>
+                                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2o0-C0-Us7" userLabel="Underline">
+                                    <rect key="frame" x="0.0" y="38" width="375" height="2"/>
+                                    <color key="backgroundColor" red="0.57724521399999995" green="0.57724521399999995" blue="0.57724521399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1.75" id="OdJ-V7-hLR"/>
+                                    </constraints>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before Edit Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5E-XX-did">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="cluiTextFieldPlaceholderLabel"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="EWl-9W-iyh"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9a-US-RH5">
+                                    <rect key="frame" x="345" y="2" width="30" height="34"/>
+                                    <connections>
+                                        <action selector="buttonToggleTextVisibilityPressed:" destination="-1" eventType="touchUpInside" id="FpO-aO-yY5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" secondItem="O0h-Aq-XWL" secondAttribute="height" multiplier="1.1" priority="750" id="Cyi-IT-Xcq"/>
+                                <constraint firstItem="2o0-C0-Us7" firstAttribute="centerX" secondItem="7Ks-0I-d60" secondAttribute="centerX" id="II2-Vb-UtS"/>
+                                <constraint firstItem="i5E-XX-did" firstAttribute="height" secondItem="O0h-Aq-XWL" secondAttribute="height" id="IeO-AO-5Qa"/>
+                                <constraint firstItem="i5E-XX-did" firstAttribute="leading" secondItem="7Ks-0I-d60" secondAttribute="leading" id="JGQ-al-Nof"/>
+                                <constraint firstAttribute="trailing" secondItem="M9a-US-RH5" secondAttribute="trailing" id="JmH-OU-aEy"/>
+                                <constraint firstAttribute="trailing" secondItem="i5E-XX-did" secondAttribute="trailing" id="Pcp-yj-hPr"/>
+                                <constraint firstItem="M9a-US-RH5" firstAttribute="centerY" secondItem="i5E-XX-did" secondAttribute="centerY" id="ZR3-eo-qh6"/>
+                                <constraint firstItem="O0h-Aq-XWL" firstAttribute="leading" secondItem="7Ks-0I-d60" secondAttribute="leading" id="feb-Yk-thV"/>
+                                <constraint firstAttribute="width" secondItem="O0h-Aq-XWL" secondAttribute="width" id="mud-VS-mrD"/>
+                                <constraint firstItem="O0h-Aq-XWL" firstAttribute="top" secondItem="7Ks-0I-d60" secondAttribute="top" id="n3Z-nA-m5j"/>
+                                <constraint firstAttribute="trailing" secondItem="O0h-Aq-XWL" secondAttribute="trailing" id="n9u-Es-WRE"/>
+                                <constraint firstItem="2o0-C0-Us7" firstAttribute="top" secondItem="O0h-Aq-XWL" secondAttribute="bottom" id="q1H-fm-DED"/>
+                                <constraint firstItem="2o0-C0-Us7" firstAttribute="width" secondItem="7Ks-0I-d60" secondAttribute="width" id="upL-7I-HG2"/>
+                                <constraint firstItem="i5E-XX-did" firstAttribute="centerY" secondItem="O0h-Aq-XWL" secondAttribute="centerY" id="wVr-I1-Ikp"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="TopLeft" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="5PH-Ug-6Ki">
+                            <rect key="frame" x="0.0" y="42" width="375" height="14.5"/>
+                            <subviews>
+                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tooltip" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uaf-rd-wvV">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="14.5"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="cluiTextFieldTooltip"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14.5" id="Zwv-ha-CNm"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                    <color key="textColor" red="0.57724521399999995" green="0.57724521399999995" blue="0.57724521399999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Uaf-rd-wvV" secondAttribute="trailing" id="XGG-iH-qQy"/>
+                                <constraint firstAttribute="bottom" secondItem="Uaf-rd-wvV" secondAttribute="bottom" id="YM4-dB-R3k"/>
+                                <constraint firstItem="Uaf-rd-wvV" firstAttribute="leading" secondItem="5PH-Ug-6Ki" secondAttribute="leading" id="fTa-fx-gvC"/>
+                                <constraint firstAttribute="height" secondItem="Uaf-rd-wvV" secondAttribute="height" id="skr-tF-KQA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="5PH-Ug-6Ki" firstAttribute="top" secondItem="7Ks-0I-d60" secondAttribute="bottom" id="IVn-oA-0yk"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="fMN-Ch-t7e" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="7eS-zd-Qdd"/>
+                <constraint firstItem="fMN-Ch-t7e" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="CyI-Qa-HUi"/>
+                <constraint firstItem="dje-Bj-X8u" firstAttribute="top" secondItem="fMN-Ch-t7e" secondAttribute="bottom" id="LQb-3f-5Iz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dje-Bj-X8u" secondAttribute="bottom" id="S1f-dP-XG3"/>
+                <constraint firstItem="fMN-Ch-t7e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ptP-rn-ahu"/>
+                <constraint firstItem="dje-Bj-X8u" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="t2K-bE-Q3w"/>
+                <constraint firstItem="dje-Bj-X8u" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xtf-Jc-VGK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="160.80000000000001" y="-274.81259370314842"/>
+        </view>
+    </objects>
+</document>

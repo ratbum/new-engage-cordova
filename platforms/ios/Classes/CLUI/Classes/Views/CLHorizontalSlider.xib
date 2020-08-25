@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CLHorizontalSlider" customModule="CLUI" customModuleProvider="target">
+            <connections>
+                <outlet property="currentPositionContainer" destination="G8D-Jd-dqR" id="sef-XO-NA3"/>
+                <outlet property="currentPositionContainerConstraint" destination="5cA-Oe-jMJ" id="Bbk-jf-r4w"/>
+                <outlet property="currentPositionLabel" destination="8mn-j3-EGq" id="qTd-Eg-fdB"/>
+                <outlet property="maxLabel" destination="hnO-0T-q0B" id="Gl2-HQ-1GA"/>
+                <outlet property="minLabel" destination="L0V-MH-fgx" id="rNb-8x-iKo"/>
+                <outlet property="slider" destination="xJe-Sg-j1t" id="qil-IK-DpC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <slider autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="fill" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xJe-Sg-j1t">
+                    <rect key="frame" x="6" y="40" width="328" height="31"/>
+                    <connections>
+                        <action selector="sliderDragged:" destination="-1" eventType="touchDragInside" id="fUP-TD-LsD"/>
+                        <action selector="valueChanged:" destination="-1" eventType="valueChanged" id="i2M-dC-Gnm"/>
+                    </connections>
+                </slider>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0V-MH-fgx">
+                    <rect key="frame" x="8" y="12" width="10.5" height="20"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnO-0T-q0B">
+                    <rect key="frame" x="303" y="12" width="29" height="21"/>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                    </accessibility>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8D-Jd-dqR" customClass="CLCurrentValueContainerView" customModule="CLUI" customModuleProvider="target">
+                    <rect key="frame" x="154" y="7" width="32.5" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mn-j3-EGq">
+                            <rect key="frame" x="6" y="5" width="20.5" height="21"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                            </accessibility>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <accessibility key="accessibilityConfiguration">
+                        <accessibilityTraits key="traits" notEnabled="YES"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstItem="8mn-j3-EGq" firstAttribute="top" secondItem="G8D-Jd-dqR" secondAttribute="top" constant="5" id="HrB-F4-78D"/>
+                        <constraint firstAttribute="bottom" secondItem="8mn-j3-EGq" secondAttribute="bottom" constant="4" id="IKW-qe-5bY"/>
+                        <constraint firstAttribute="height" constant="30" id="Mhz-3i-38y"/>
+                        <constraint firstItem="8mn-j3-EGq" firstAttribute="leading" secondItem="G8D-Jd-dqR" secondAttribute="leading" constant="6" id="gQA-IA-S1S"/>
+                        <constraint firstAttribute="trailing" secondItem="8mn-j3-EGq" secondAttribute="trailing" constant="6" id="jka-Kn-2QV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="G8D-Jd-dqR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="0U9-sv-J0A"/>
+                <constraint firstItem="xJe-Sg-j1t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="4RX-x1-ftJ"/>
+                <constraint firstItem="G8D-Jd-dqR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" priority="800" id="5cA-Oe-jMJ"/>
+                <constraint firstAttribute="right" secondItem="xJe-Sg-j1t" secondAttribute="right" constant="8" id="6GQ-dN-Ayr"/>
+                <constraint firstItem="G8D-Jd-dqR" firstAttribute="left" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="left" constant="40" id="FyP-wW-92h"/>
+                <constraint firstItem="L0V-MH-fgx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="G9g-rJ-WSh"/>
+                <constraint firstItem="hnO-0T-q0B" firstAttribute="trailing" secondItem="xJe-Sg-j1t" secondAttribute="trailing" id="Lis-kv-LVM"/>
+                <constraint firstItem="G8D-Jd-dqR" firstAttribute="right" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="right" constant="-40" id="V3b-Za-bhY"/>
+                <constraint firstItem="hnO-0T-q0B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="i6o-eH-acZ"/>
+                <constraint firstItem="xJe-Sg-j1t" firstAttribute="left" secondItem="iN0-l3-epB" secondAttribute="left" constant="8" id="jeY-UJ-INa"/>
+                <constraint firstItem="L0V-MH-fgx" firstAttribute="leading" secondItem="xJe-Sg-j1t" secondAttribute="leading" id="k9Z-ac-ztG"/>
+                <constraint firstAttribute="bottom" secondItem="xJe-Sg-j1t" secondAttribute="bottom" constant="18" id="oU2-rq-nPP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138" y="104"/>
+        </view>
+    </objects>
+</document>

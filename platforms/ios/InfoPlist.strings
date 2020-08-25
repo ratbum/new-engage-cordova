@@ -1,0 +1,4 @@
+"NSCameraUsageDescription" = "Allow access to the camera so that you can set your profile picture and capture image and video responses for survey tasks and forums";
+"NSMicrophoneUsageDescription" = "Allow access to the microphone so you can record audio responses for survey tasks and forums";
+"NSPhotoLibraryAddUsageDescription" = "Allow access to the photo library so you can set your profile picture and post photo and video responses to survey tasks and forums";
+"NSPhotoLibraryUsageDescription" = "Allow access to the photo library so you can set your profile picture and post photo and video responses to survey tasks and forums";

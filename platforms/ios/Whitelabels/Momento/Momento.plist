@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>style</key>
+	<dict>
+		<key>projectStatusBarColour</key>
+		<string>colorLiteral(red: 0.2535994947, green: 0.6782304645, blue: 0.9334871769, alpha: 1)</string>
+		<key>primaryColour</key>
+		<string></string>
+		<key>navigationColour</key>
+		<string>colorLiteral(red: 0.2535994947, green: 0.6782304645, blue: 0.9334871769, alpha: 1)</string>
+		<key>fieldColour</key>
+		<string>colorLiteral(red: 0.7763852477, green: 0.7765197158, blue: 0.7763767838, alpha: 1)</string>
+		<key>tooltipColour</key>
+		<string>colorLiteral(red: 0.2248968482, green: 0.3061722815, blue: 0.3066284359, alpha: 1)</string>
+		<key>validColour</key>
+		<string>colorLiteral(red: 0.7872636914, green: 0.8741124272, blue: 0, alpha: 1)</string>
+		<key>invalidColour</key>
+		<string>colorLiteral(red: 0.766345307, green: 0.009262870635, blue: 0, alpha: 1)</string>
+		<key>interactivePrimaryColour</key>
+		<string>colorLiteral(red: 0.7872636914, green: 0.8741124272, blue: 0, alpha: 1)</string>
+		<key>interactivePrimaryColourDisabled</key>
+		<string>colorLiteral(red: 0.7872636914, green: 0.8741124272, blue: 0, alpha: 0.5)</string>
+		<key>interactiveSecondaryColour</key>
+		<string>colorLiteral(red: 0.2535994947, green: 0.6782304645, blue: 0.9334871769, alpha: 1)</string>
+	</dict>
+</dict>
+</plist>
